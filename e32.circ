@@ -292,12 +292,12 @@
     </comp>
     <comp lib="0" loc="(740,1330)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
+      <a name="label" val="CClock"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(750,830)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
+      <a name="label" val="CClock"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(760,1060)" name="Tunnel">
@@ -307,7 +307,7 @@
     </comp>
     <comp lib="0" loc="(760,1090)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
+      <a name="label" val="CClock"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(760,1180)" name="Tunnel">
@@ -317,7 +317,7 @@
     </comp>
     <comp lib="0" loc="(760,1210)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
+      <a name="label" val="CClock"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(760,1300)" name="Tunnel">
@@ -337,17 +337,17 @@
     </comp>
     <comp lib="0" loc="(760,970)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
+      <a name="label" val="CClock"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(770,690)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
+      <a name="label" val="CClock"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(770,710)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="Clock"/>
+      <a name="label" val="CClock"/>
       <a name="labelfont" val="SansSerif bold 10"/>
     </comp>
     <comp lib="0" loc="(80,1010)" name="Tunnel">
@@ -377,6 +377,12 @@
       <a name="label" val="Operand2"/>
       <a name="labelfont" val="SansSerif bold 10"/>
       <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(80,370)" name="Clock">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(80,370)" name="Tunnel">
+      <a name="label" val="CClock"/>
     </comp>
     <comp lib="0" loc="(80,750)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -423,12 +429,6 @@
       <a name="label" val="ValueRegB"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(90,360)" name="Clock">
-      <a name="appearance" val="NewPins"/>
-    </comp>
-    <comp lib="0" loc="(90,360)" name="Tunnel">
-      <a name="label" val="Clock"/>
-    </comp>
     <comp lib="2" loc="(320,1890)" name="Priority Encoder"/>
     <comp lib="2" loc="(370,1580)" name="Multiplexer">
       <a name="select" val="3"/>
@@ -442,10 +442,10 @@
     <comp lib="3" loc="(180,1600)" name="Subtractor"/>
     <comp lib="3" loc="(210,1200)" name="Adder"/>
     <comp lib="3" loc="(210,1550)" name="Adder"/>
-    <comp lib="4" loc="(1320,670)" name="ROM">
+    <comp lib="4" loc="(1400,670)" name="ROM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 8 64
-0
+1111111111111111
 </a>
       <a name="dataWidth" val="64"/>
     </comp>
@@ -478,7 +478,7 @@
     <wire from="(100,1700)" to="(120,1700)"/>
     <wire from="(100,1720)" to="(120,1720)"/>
     <wire from="(110,1210)" to="(170,1210)"/>
-    <wire from="(1230,680)" to="(1320,680)"/>
+    <wire from="(1230,680)" to="(1400,680)"/>
     <wire from="(130,1590)" to="(140,1590)"/>
     <wire from="(130,1610)" to="(140,1610)"/>
     <wire from="(150,1900)" to="(280,1900)"/>
