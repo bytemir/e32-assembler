@@ -10,7 +10,7 @@ B → General Purpose Register     [0x2]
 C → General Purpose Register     [0x3]
 D → General Purpose Register     [0x4]
 E → General Purpose Register     [0x5]
-ACC → Accumulator Register [0x6]
+ACC → Accumulator Register      [0x6..+]
 
 Instruction Set Architecture:
 
@@ -21,6 +21,12 @@ MOV: (0x00) → Move Value OPR2 into Register Index OPR1
    Operand 2: (Hex Value)
 
 JMP: (0x01) → Change PC value to OPR1
+   Operand 1: (Hex Value)
+
+JMPG: (0x08) → Change PC to value OPR1 if ACC has a value GREATER or EQUAL to 1 stored.
+    Operand 1: (Hex Value)
+
+JMPZ : (0x09) → Change PC to value OPR1 if ACC has 0 stored.
    Operand 1: (Hex Value)
 
 Arithmetic Instructions:
@@ -39,6 +45,8 @@ DIV: (0x05) → Divide Value of Register Index OPR1 from value OPR2 OPR1 → Sto
    Operand 1: (Register Index) [0x1-0x6]
    Operand 2: (Hex Value)
 
+Accumulator Movement Instructions:
+
 LOAD: (0x06) → Load Value from Register Index OPR1 into ACC
    Operand 1: (Register Index) [0x1-0x6]
 
@@ -46,11 +54,8 @@ STORE: (0x07) → Store Value from ACC into Register Index OPR1
    Operand 1: (Register Index) [0x1-0x6]
 
 
-[Ignore: (Testing)]
-MOV 0x6 0x1 → ACC = 1
-
-
-
-
 TODO:
 - 
+
+IF IS MOV AND NOT ACC ACC DISABLE
+IF IS ADD MUL DIV SUB LOAD ACC ENABLE
